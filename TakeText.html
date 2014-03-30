@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://getbootstrap.com/examples/jumbotron/ -->
+<head>
+<script src="bower_components/jquery/jquery-2.1.0.min.js"> </script>
+<script src="app.js"> </script>
+</head>
+
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="http://getbootstrap.com/assets/ico/favicon.ico">
+
+    <title>Jumbotron Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="http://getbootstrap.com/examples/jumbotron/jumbotron.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+ 
+
+<P>Top lel<p>
+<div class="app" id="app">
+<p>How much time are you going to spend studying today(in minutes)? <input type="text" id="usertime" name="usertime" value="120"/>
+<p>Input your text here:<p>
+	<input type="text" id="supertexto" name="usertext" value="Input your text here..." style="width: 300px; height: 150px;" />
+<div>
+<input id="clickMe" type="button" value="change me" onclick= "lel()";/>
+</div>
+</div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  
+
+
+</body>
+<script>
+var time;
+var texto;
+function lel(){
+	texto = $( '#supertexto' ).val();
+    alert(texto);
+	time = $( '#usertime' ).val();
+    alert(time);
+	$( '#app' ).load('./nav.html');
+}
+
+    <script type="text/javascript">
+       var body;
+        function display(element){
+            //console.log(value);
+            $("#aki").empty().append(element);//.fadeIn().fadeOut();
+            
+        };
+    function foo(){
+        body = $('#boxxy').val();
+        alert("I'm going to study!");
+        var array = body.split(" ");
+        //console.log(array);
+        
+        for (var i = 0, len = array.length; i < len; i++) {
+          (function(i) {
+            setTimeout(function() {
+              if(array[i] != array[i+1])
+                display(array[i]);
+            }, i * 300);
+          })(i);
+        }
+        };
+        
+        </script>
+</script>
+</html>

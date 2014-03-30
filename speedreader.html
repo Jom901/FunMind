@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> jQUERY Test </title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<!--<script type="text/javascript" src="ivan_code.js"></script>-->
+</head>
+
+<body>
+	
+	<input type="text" id="boxxy" value="COPY PASTE HERE"/>
+	
+	<div id="aki" style="font-size:16pt;"></div>
+	
+	<div class="initializer"><input id='testbutton' type='button' value='Press me!' onclick="foo()"/> </div>
+	
+	<div>
+    <p>Keslake funciono!!!!!!!!!!!!</p>
+	</div>
+	<script type="text/javascript">
+	   var body;
+	    function display(element){
+		    //console.log(value);
+			$("#aki").empty().append(element);//.fadeIn().fadeOut();
+			
+		};
+	function foo(){
+		body = $('#boxxy').val();
+		alert("I'm going to study!");
+		var array = body.split(" ");
+		//console.log(array);
+		
+		for (var i = 0, len = array.length; i < len; i++) {
+		  (function(i) {
+			setTimeout(function() {
+			  if(array[i] != array[i+1])
+			    display(array[i]);
+			}, i * 300);
+		  })(i);
+		}
+		};
+		
+		</script>
+</body>
+	
+	
+	
+</html>

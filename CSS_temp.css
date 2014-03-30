@@ -1,0 +1,83 @@
+html { 
+  background: url(brain_image.png) no-repeat 60% 30% fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body{
+	
+  text-align:center;
+ 	
+}
+		
+	#ds{
+	background-color: #3CF;
+	position: absolute;
+	left: 45%;
+	top: 45%;
+	right: 60%;
+	bottom: 50%;
+	height: 15%;
+	width: 15%;
+	-webkit-border-radius: 200px;
+	-moz-border-radius: 200px;
+	border: groove;
+	border-radius: 200px;
+	
+}
+
+div a{
+text-decoration:none;
+font-family:"Comic Sans MS", cursive;	
+	color:#FF0;
+	}
+	
+#All_T{
+	
+	text-decoration:none;
+font-family:"Comic Sans MS", cursive;	
+	color:#FF0;
+	position:fixed;
+	background:#999;
+	
+	border-radius:10px; 
+-moz-border-radius:10px; /* Firefox */ 
+-webkit-border-radius:10px; /* Safari y Chrome */
+
+margin-top: 19%;
+left: 35%;
+width: 30%;
+
+
+}
+
+#Spreed_center{
+	position:fixed;
+   margin-top: 20%;
+left: 27%;
+width: 45%;
+border: 2px solid black;
+
+
+background-color:#FFF; 	
+	
+}
+#il{
+ color:#333;
+ text-decoration:none;	
+}
+
+h1{
+	
+ font-size:90px;
+ color:#09F;
+ font-family:"Comic Sans MS", cursive;	
+}
+
+h2{
+ font-size:25px;
+ font-family:"Comic Sans MS", cursive;
+ 	
+}

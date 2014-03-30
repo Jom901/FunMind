@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="bower_components/jquery/jquery-2.1.0.min.js"> </script>
+<link rel="stylesheet" href="CSS_temp.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+<style type="text/css">
+#div_form{text-align:center;
+margin-top:150px;
+}
+#sub_button{-moz-border-radius:15px;
+-webkit-border-radius:15px;
+ font-family: "Comic Sans MS", cursive;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="div_form">
+
+<input type="text" id="usertime" name="time" placeholder="Study time in minutes..." > <br />
+<input type="text" name="text" id="supertexto" placeholder="Insert text or something...">
+<br />
+<input id="sub_button"type="submit" name="submit" value="submit" onclick="lel()";/>
+</div>
+
+
+</body>
+<script>
+var time;
+
+var texto;
+function lel(){
+	texto = $( '#supertexto' ).val();
+
+	time = $( '#usertime' ).val();
+    $( 'body' ).load('./Prep.html');
+};
+function lel2(){
+	$( 'body' ).load('./speedreader2.html');
+};
+
+       var body;
+        function display(element){
+            //console.log(value);
+            $("#aki").empty().append(element);//.fadeIn().fadeOut();
+            
+        };
+    function retry(){
+        $('body').empty().load('./Planning2.html');
+    }
+    function foo(){
+        body = $('#boxxy').val();
+        alert("I'm going to study!");
+        var array = texto.split(" ");
+        //console.log(array);
+        
+        for (var i = 0, len = array.length; i < len; i++) {
+          (function(i) {
+            setTimeout(function() {
+              if(array[i] != array[i+1])
+                display(array[i]);
+            }, i * 300);
+          })(i);
+        }
+        };
+        
+        </script>
+</html>
